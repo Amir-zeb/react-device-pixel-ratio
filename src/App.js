@@ -1,9 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import useDevicePixelRatio from './hooks/useDevicePixelRatio';
 
 function App() {
+  useDevicePixelRatio(); // Use the hook and specify the min screen width if needed
+
   return (
-    <div className="App">
+    <div className="App" id="main-content">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
