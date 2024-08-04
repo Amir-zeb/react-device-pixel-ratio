@@ -3,6 +3,8 @@ import './App.css';
 import useDevicePixelRatio from './hooks/useDevicePixelRatio';
 
 function App() {
+  // Use the hook to handle device pixel ratio adjustments.
+  // The logic inside the hook will run only if the screen width is >= 768px.
   useDevicePixelRatio(); // Use the hook and specify the min screen width if needed
 
   return (
